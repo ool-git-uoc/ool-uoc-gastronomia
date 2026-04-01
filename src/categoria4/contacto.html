@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Gastronomía | Contacto</title>
+    <meta name="description" content="Página de contacto para ponerse en contacto con el equipo de gastronomía.">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+    <body class="home" id="top">
+    
+        <include src="partials/header-inner.html"></include>
+        
+        <main id="main-content" class="fondo-page">
+            <section class="page-wrapper">
+            <header class="contact-intro">
+                <h1>Contacto</h1>
+                <p>
+                Rellene el siguiente formulario para enviarnos su consulta. Le responderemos por correo electrónico lo antes posible.
+                </p>
+                <p class="required-note">Los campos señalados con <span>*</span> son obligatorios.</p>
+            </header>
+
+            <form id="contact-form" class="contact-form contact-form--framed" novalidate>
+                <fieldset>
+                <legend>INFORMACIÓN DE CONTACTO</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                    <label for="asunto">Asunto <span>*</span></label>
+                    <input type="text" id="asunto" name="asunto" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="email">Correo electrónico <span>*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group form-group--full">
+                    <label for="descripcion">Descripción breve <span>*</span></label>
+                    <textarea id="descripcion" name="descripcion" rows="6"
+                        placeholder="Escriba aquí su consulta o comentario..."
+                        required
+                    ></textarea>
+                    </div>
+                </div>
+                </fieldset>
+
+                <div class="form-actions">
+                <button type="submit" class="form-btn">Enviar consulta</button>
+                </div>
+
+                <p id="contact-message" class="form-message" aria-live="polite"></p>
+            </form>
+            </section>
+        </main>
+    
+        
+        <include src="partials/footer-inner.html"></include>
+
+        <script type="module" src="../js/app.js"></script>
+    
+    </body>
+</html>

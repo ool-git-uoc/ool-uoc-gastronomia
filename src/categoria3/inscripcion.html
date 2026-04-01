@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Gastronomía | Inscripción</title>
+    <meta name="description" content="Página de Inscripción a los talleres de Mi Blog de Gastronomía. Rellene el formulario para inscribirse en nuestros talleres culinarios. Plazas limitadas, confirme su asistencia hoy mismo.">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="home">
+    
+    <include src="partials/header-inner.html"></include>
+
+    <main id="main-content" class="fondo-page">
+        <section class="page-wrapper">
+        <header class="contact-intro" data-aos="fade-up">
+            <h1>Inscripción a los talleres</h1>
+            <p>
+            Rellene el formulario siguiente para inscribirse en nuestros talleres.
+            Las plazas son limitadas y se confirmarán por orden de inscripción.
+            Una vez recibida la solicitud, contactaremos con usted por correo
+            electrónico para darle todos los detalles del taller y las instrucciones de pago.
+            </p>
+            <p class="required-note">Los campos señalados con <span>*</span> son obligatorios.</p>
+        </header>
+
+        <form id="inscripcion-form" class="contact-form contact-form--framed" novalidate>
+            <fieldset data-aos="fade-up" data-aos-delay="100">
+            <legend>DATOS PERSONALES</legend>
+
+            <div class="form-grid">
+                <div class="form-group">
+                <label for="nombre">Nombre <span>*</span></label>
+                <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                <label for="apellidos">Apellidos <span>*</span></label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+
+                <div class="form-group">
+                <label for="email-inscripcion">Correo electrónico <span>*</span></label>
+                <input type="email" id="email-inscripcion" name="email" required>
+                </div>
+
+                <div class="form-group">
+                <label for="telefono">Teléfono de contacto <span>*</span></label>
+                <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de nacimiento <span>*</span></label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+
+                <div class="form-group">
+                <label for="nacionalidad">Nacionalidad <span>*</span></label>
+                <input type="text" id="nacionalidad" name="nacionalidad" required>
+                </div>
+            </div>
+            </fieldset>
+
+            <fieldset data-aos="fade-up" data-aos-delay="150">
+            <legend>INFORMACIÓN SOBRE LA INSCRIPCIÓN</legend>
+
+            <div class="form-grid">
+                <div class="form-group">
+                <label for="nivel-experiencia">Nivel de experiencia culinaria <span>*</span></label>
+                <select id="nivel-experiencia" name="nivel-experiencia" required>
+                    <option value="">Seleccione su nivel</option>
+                    <option value="iniciacion">Iniciación</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="idioma-taller">Idioma preferido del taller <span>*</span></label>
+                <select id="idioma-taller" name="idioma-taller" required>
+                    <option value="">Seleccione un idioma</option>
+                    <option value="espanol">Español</option>
+                    <option value="catalan">Catalán</option>
+                    <option value="ingles">Inglés</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="taller">Seleccione un taller <span>*</span></label>
+                <select id="taller" name="taller" required>
+                    <option value="">Seleccione un taller</option>
+                    <option value="ramen">Ramen de invierno: caldo y técnicas</option>
+                    <option value="navidad-med">Cocina de Navidad mediterránea</option>
+                    <option value="italiana">Recetas navideñas italianas</option>
+                    <option value="oriente">Catas de Oriente Medio para fiestas</option>
+                    <option value="dulces">Dulces para las fiestas</option>
+                    <option value="nordica">Tradición nórdica de Navidad</option>
+                    <option value="mexicana">Cocina festiva mexicana</option>
+                </select>
+                </div>
+            </div>
+            </fieldset>
+
+            <fieldset data-aos="fade-up" data-aos-delay="200">
+            <legend>PROPONGA UN NUEVO TALLER</legend>
+
+            <p class="fieldset-intro">
+                Si tiene alguna idea para un nuevo taller, explíquenosla.
+            </p>
+
+            <div class="form-grid">
+                <div class="form-group form-group--full">
+                <label for="titulo-taller">Título o tema del taller</label>
+                <input type="text" id="titulo-taller" name="titulo-taller">
+                </div>
+
+                <div class="form-group form-group--full">
+                <label for="propuesta">Descripción breve de la propuesta</label>
+                <textarea
+                    id="propuesta"
+                    name="propuesta"
+                    rows="6"
+                    placeholder="Explique qué le gustaría aprender o compartir en este taller..."
+                ></textarea>
+                </div>
+
+                <div class="form-group form-group--full">
+                <label for="region-origen">País o región de origen</label>
+                <input
+                    type="text"
+                    id="region-origen"
+                    name="region-origen"
+                    placeholder="Ejemplo: Vietnam, Mediterráneo, Argentina..."
+                >
+                </div>
+
+                <div class="form-group form-group--full">
+                <label for="chef-propuesto">¿Conoce a algún chef o persona que podría impartirlo?</label>
+                <input type="text" id="chef-propuesto" name="chef-propuesto">
+                </div>
+
+                <div class="form-group form-group--full">
+                <p class="radio-group-title">Nivel de dificultad propuesto</p>
+
+                <div class="radio-group">
+                    <label class="radio-option">
+                    <input type="radio" name="nivel-propuesto" value="iniciacion">
+                    <span>Iniciación</span>
+                    </label>
+
+                    <label class="radio-option">
+                    <input type="radio" name="nivel-propuesto" value="intermedio">
+                    <span>Intermedio</span>
+                    </label>
+
+                    <label class="radio-option">
+                    <input type="radio" name="nivel-propuesto" value="avanzado">
+                    <span>Avanzado</span>
+                    </label>
+                </div>
+                </div>
+            </div>
+            </fieldset>
+
+            <div class="privacy-box" data-aos="fade-up" data-aos-delay="250">
+            <p>
+                INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DEL BLOG.
+                <strong>Finalidades:</strong> recogida de datos para la inscripción en los talleres.
+                <strong>Legitimación:</strong> consentimiento del interesado.
+                <strong>Destinatarios:</strong> no están previstas cesiones de datos a terceros, salvo por obligación legal.
+                <strong>Derechos:</strong> puede retirar su consentimiento en cualquier momento, así como acceder, rectificar,
+                suprimir sus datos y otros derechos dirigiéndose a info@miblog.eu.
+                <strong>Información adicional:</strong> puede ampliar la información en el enlace de
+                <a href="">Aviso Legal</a> y
+                <a href="">Política de privacidad</a>.
+            </p>
+            </div>
+
+            <div class="privacy-check">
+            <label>
+                <input type="checkbox" id="acepta-privacidad" name="acepta-privacidad" required>
+                <span>He leído y acepto la política de privacidad <strong>*</strong></span>
+            </label>
+            </div>
+
+            <div class="form-actions form-actions--left">
+            <button type="submit" class="form-btn">Inscribirme</button>
+            </div>
+
+            <p id="inscripcion-message" class="form-message" aria-live="polite"></p>
+
+        
+        </form>
+        </section>
+    </main>
+   
+    
+    <include src="partials/footer-inner.html"></include>
+
+    <script type="module" src="../js/app.js"></script>
+    
+    </body>
+</html>

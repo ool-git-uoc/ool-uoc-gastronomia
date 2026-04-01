@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Gastronomía | Recetario</title>
+    <meta name="description" content="Página del recetario con diversas recetas de gastronomía.">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="home" id ="top">
+    
+    <include src="partials/header-inner.html"></include>
+    
+    <main id="main-content" class="page-page">
+        <section class="recipes-layout">
+        <aside class="recipes-sidebar" data-aos="fade-right">
+            <nav aria-label="Categorías del recetario">
+            <ul class="recipes-menu">
+                <li><a href="#arroces">ARROCES</a></li>
+                <li><a href="#sopas">SOPAS</a></li>
+                <li><a href="#postres">POSTRES</a></li>
+            </ul>
+            </nav>
+
+            <form class="recipes-search" role="search">
+            <label for="recipes-search-input" class="visually-hidden">Buscar receta</label>
+            <div class="recipes-search-box">
+                <input type="search" id="recipes-search-input" name="q"
+                placeholder="Buscar...">
+                <i class="bi bi-search"></i>
+            </div>
+            </form>
+        </aside>
+
+        <section class="recipes-content">
+            <header class="recipes-header" data-aos="fade-up">
+            <h1>Recetario gastronómico</h1>
+            </header>
+
+            <section id="arroces" class="recipes-group" data-aos="fade-up" data-aos-delay="100">
+            <h2>Arroces</h2>
+
+            <div class="recipes-grid">
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Paella Valenciana</h3>
+                    <p>Tradicional · España</p>
+                    <a href="../det1/paella.html" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/paella.jpg" alt="Paella valenciana recién servida">
+                    <p>Paella valenciana tradicional</p>
+                </div>
+                </article>
+
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Risotto de setas</h3>
+                    <p>Cremoso · Italia</p>
+                    <a href="../det2/risotto.html" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/risotto.jpg" alt="Plato de risotto de setas">
+                    <p>Risotto italiano de temporada</p>
+                </div>
+                </article>
+
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Arroz negro</h3>
+                    <p>Marinero · Mediterráneo</p>
+                    <a href="" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/arroz-negro.jpg" alt="Arroz negro con sepia">
+                    <p>Arroz negro con sepia</p>
+                </div>
+                </article>
+
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Fideuà</h3>
+                    <p>Costa · Valencia</p>
+                    <a href="" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/fideua.jpg" alt="Fideuà servida en plato">
+                    <p>Fideuà de marisco</p>
+                </div>
+                </article>
+            </div>
+            </section>
+
+            <section id="sopas" class="recipes-group" data-aos="fade-up" data-aos-delay="150">
+            <h2>Sopas</h2>
+
+            <div class="recipes-grid">
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Gazpacho andaluz</h3>
+                    <p>Frío · España</p>
+                    <a href="" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/gazpacho.jpg" alt="Gazpacho andaluz servido en cuenco">
+                    <p>Gazpacho con verduras frescas</p>
+                </div>
+                </article>
+
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Sopa de cebolla</h3>
+                    <p>Clásica · Francia</p>
+                    <a href="" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/sopa-cebolla.jpg" alt="Sopa de cebolla gratinada">
+                    <p>Sopa francesa gratinada</p>
+                </div>
+                </article>
+            </div>
+            </section>
+
+            <section id="postres" class="recipes-group" data-aos="fade-up" data-aos-delay="200">
+            <h2>Postres</h2>
+
+            <div class="recipes-grid">
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Torrijas</h3>
+                    <p>Tradicional · España</p>
+                    <a href="" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/torrijas.jpg" alt="Torrijas">
+                    <p>Torrijas caseras</p>
+                </div>
+                </article>
+
+                <article class="recipe-card">
+                <div class="recipe-card__text">
+                    <h3>Tiramisú</h3>
+                    <p>Café · Italia</p>
+                    <a href="" class="recipe-btn">FICHA COMPLETA</a>
+                </div>
+                <div class="recipe-card__image">
+                    <img src="../assets/img/tiramisu.jpg" alt="Porción de tiramisú">
+                    <p>Tiramisú clásico italiano</p>
+                </div>
+                </article>
+            </div>
+            </section>
+        </section>
+        </section>
+    </main>
+   
+    
+    <include src="partials/footer-inner.html"></include>
+
+    <script type="module" src="../js/app.js"></script>
+    
+    </body>
+</html>
