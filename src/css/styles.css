@@ -1,7 +1,6 @@
 /* Tema */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
 /* Declaración de variables */
 :root {
 
@@ -1492,6 +1491,13 @@ figure.file iframe {
   margin: 0 auto;
   line-height: 1.75;
   color: var(--color-text-main);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /******************************************************/

@@ -76,7 +76,7 @@ src/
 ### 1. Clonar el repositorio
 
 ```
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/ool-git-uoc/ool-uoc-gastronomia
 ```
 
 ### 2. Instalar dependencias
