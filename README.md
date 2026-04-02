@@ -57,8 +57,7 @@ src/
 ├── links/
 │   └── links.html
 ├── partials/
-│   ├── footer-home.html
-│   ├── footer-inner.html
+│   ├── footer.html
 │   ├── header-home.html
 │   └── header-inner.html
 ├── index.html
