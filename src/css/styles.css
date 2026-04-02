@@ -1221,6 +1221,13 @@ dd ul {
   margin: 0;
 }
 
+.detail-extra-images figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
 .detail-extra-images figcaption,
 figure.file figcaption {
   font-size: 0.8rem;
