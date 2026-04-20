@@ -17,21 +17,38 @@
             <section class="home-hero">
             <div class="page-wrapper home-hero__grid">
                 <div class="home-hero__content" data-aos="fade-up">
-                <p class="home-eyebrow">Gastronomía mediterránea</p>
-                <h1>Sabores, recetas y cultura para disfrutar la cocina</h1>
-                <p class="home-lead">
-                    Un espacio para descubrir platos tradicionales, aprender nuevas técnicas
-                    y explorar la gastronomía como una forma de compartir historias, memoria y creatividad.
-                </p>
+                    <p class="home-eyebrow">Gastronomía mediterránea</p>
+                    <h1>Sabores, recetas y cultura para disfrutar la cocina</h1>
+                    <p class="home-lead">
+                        Un espacio para descubrir platos tradicionales, aprender nuevas técnicas
+                        y explorar la gastronomía como una forma de compartir historias, memoria y creatividad.
+                    </p>
 
-                <div class="home-hero__actions">
-                    <a href="./categoria2/recetario.html" class="home-btn">Ver recetario</a>
-                    <a href="./categoria3/talleres.html" class="home-btn home-btn--secondary">Explorar talleres</a>
-                </div>
+                    <div class="home-hero__actions">
+                        <a href="./categoria2/recetario.html" class="home-btn">Ver recetario</a>
+                        <a href="./categoria3/talleres.html" class="home-btn home-btn--secondary">Explorar talleres</a>
+                    </div>
                 </div>
 
                 <div class="home-hero__image" data-aos="zoom-in" data-aos-delay="150">
-                <img src="./assets/img/paella.jpg" alt="Mesa con platos variados de gastronomía mediterránea">
+                    <picture>
+                        
+                        <!-- Formato AVIF (mejor compresión) -->
+                        <source srcset="./assets/img/paella.jpg?as=avif&width=1200" type="image/avif">
+
+                        <!-- Formato WebP (fallback moderno) -->
+                        <source srcset="./assets/img/paella.jpg?as=webp&width=1200" type="image/webp">
+
+                        <!-- Fallback JPG -->
+                        <img  src="./assets/img/paella.jpg?width=700" srcset="
+                            ./assets/img/paella.jpg?width=400 400w,
+                            ./assets/img/paella.jpg?width=700 700w,
+                            ./assets/img/paella.jpg?width=1200 1200w
+                        "
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        alt="Mesa con platos variados de gastronomía mediterránea">
+                        
+                    </picture>
                 </div>
             </div>
             </section>
@@ -93,7 +110,17 @@
 
                 <div class="home-featured__grid">
                 <article class="home-featured-card" data-aos="fade-up" data-aos-delay="50">
-                    <img src="./assets/img/paella.jpg" alt="Paella valenciana recién hecha">
+                    <picture>
+                        <source 
+                            srcset="./assets/img/paella.jpg?as=avif&width=400"
+                            type="image/avif">
+                        <source 
+                            srcset="./assets/img/paella.jpg?as=webp&width=400"
+                            type="image/webp">
+                        <img 
+                            src="./assets/img/paella.jpg?width=400"
+                            alt="Paella valenciana recién hecha">
+                    </picture>
                     <div class="home-featured-card__content">
                     <h3>Paella Valenciana</h3>
                     <p>Una receta icónica de la cocina mediterránea, llena de tradición y sabor.</p>
@@ -102,7 +129,17 @@
                 </article>
 
                 <article class="home-featured-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="./assets/img/risotto.jpg" alt="Risotto cremoso">
+                    <picture>
+                        <source 
+                            srcset="./assets/img/risotto.jpg?as=avif&width=400"
+                            type="image/avif">
+                        <source 
+                            srcset="./assets/img/risotto.jpg?as=webp&width=400"
+                            type="image/webp">
+                        <img 
+                            src="./assets/img/risotto.jpg?width=400"
+                            alt="Risotto cremoso de setas">
+                    </picture>
                     <div class="home-featured-card__content">
                     <h3>Risotto</h3>
                     <p>Un plato italiano emblemático, preparado con arroz short-grain y una salsa cremosa.</p>
@@ -111,7 +148,17 @@
                 </article>
 
                 <article class="home-featured-card" data-aos="fade-up" data-aos-delay="150">
-                    <img src="./assets/img/torrijas.jpg" alt="Torrijas tradicionales">
+                    <picture>
+                        <source 
+                            srcset="./assets/img/torrijas.jpg?as=avif&width=400"
+                            type="image/avif">
+                        <source 
+                            srcset="./assets/img/torrijas.jpg?as=webp&width=400"
+                            type="image/webp">
+                        <img 
+                            src="./assets/img/torrijas.jpg?width=400"
+                            alt="Torrijas tradicionales caseras">
+                    </picture>
                     <div class="home-featured-card__content">
                     <h3>Torrijas</h3>
                     <p>Un postre tradicional con textura suave y una superficie caramelizada irresistible.</p>

@@ -27,7 +27,17 @@
             <section class="about-card" data-aos="fade-up" data-aos-delay="100">
             <div class="about-card__grid">
                 <div class="about-card__image" data-aos="zoom-in" data-aos-delay="150">
-                <img src="../assets/img/chef.jpg" alt="Persona preparando una receta en la cocina">
+                    <picture>
+                        <source
+                            srcset="../assets/img/chef.jpg?as=avif&width=640"
+                            type="image/avif">
+                        <source
+                            srcset="../assets/img/chef.jpg?as=webp&width=640"
+                            type="image/webp">
+                        <img
+                            src="../assets/img/chef.jpg?width=640"
+                            alt="Persona preparando una receta en la cocina">
+                    </picture>
                 </div>
 
                 <div class="about-card__content">

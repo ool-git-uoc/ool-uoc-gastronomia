@@ -343,13 +343,6 @@ abbr[title] {
   padding: 1rem 1.5rem;
 }
 
-.site-brand {
-  display: inline-flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: #1f1f1f;
-}
-
 .site-brand__title {
   font-family: var(--font-sans-serif);
   font-size: 1.2rem;
@@ -632,6 +625,10 @@ abbr[title] {
   object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.about-card__image picture {
+  display: block;
 }
 
 .about-tag {
@@ -1134,6 +1131,10 @@ p.intro {
   max-width: 220px;
 }
 
+.recipe-card__image picture {
+  display: block;
+}
+
 
 /******************************************************/
 /** Detalle Paella **/
@@ -1225,6 +1226,10 @@ dd ul {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  display: block;
+}
+
+.detail-extra-images picture {
   display: block;
 }
 
@@ -1413,6 +1418,15 @@ figure.file iframe {
 
 .home-card a:hover {
   text-decoration: underline;
+}
+
+.home-card picture {
+  display: block;
+}
+
+.home-card picture img {
+  width: 100%;
+  display: block;
 }
 
 .home-featured {
@@ -1750,3 +1764,108 @@ figure.file iframe {
     font-size: 1.75rem;
   }
 }
+
+/** PEC2: Estilos para el SVG de la Portada. */
+
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.site-brand__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.site-brand__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.chef-hat-svg {
+  width: 64px;
+  height: 48px;
+  color: var(--color-secondary);
+  overflow: visible;
+}
+
+.chef-hat-top {
+  fill: #fffaf5;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+
+.chef-hat-band {
+  fill: #f4e3d3;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+
+.chef-hat-base {
+  fill: #ead2bc;
+  stroke: currentColor;
+  stroke-width: 3;
+}
+
+.chef-hat-steam {
+  opacity: 0.8;
+}
+
+.chef-hat-svg--animated .chef-hat-steam--1 {
+  animation: steam-rise 2.8s ease-in-out infinite;
+}
+
+.chef-hat-svg--animated .chef-hat-steam--2 {
+  animation: steam-rise 2.8s ease-in-out 0.35s infinite;
+}
+
+.chef-hat-svg--animated .chef-hat-steam--3 {
+  animation: steam-rise 2.8s ease-in-out 0.7s infinite;
+}
+
+/** Mueve el vapor hacia arriba y ajusta su opacidad para simular el efecto de ascenso. */
+@keyframes steam-rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0.15;
+  }
+  25% {
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-8px);
+    opacity: 0.1;
+  }
+}
+
+/* Responsive para el SVG de la portada: 
+  reduce el tamaño en pantallas pequeñas para mantener la proporción y evitar que ocupe demasiado espacio. */
+@media (max-width: 700px) {
+  .chef-hat-svg {
+    width: 54px;
+    height: 40px;
+  }
+}
+
+/* paella.html*/
+.detail-featured-picture {
+  display: block;
+}
+
+.detail-featured-image {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+}
+
+
+/** Fin PEC2 */

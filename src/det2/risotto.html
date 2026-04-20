@@ -21,13 +21,46 @@
             <h1 class="file"><cite>Risotto de setas</cite></h1>
 
             <div class="intro-file">
-            <img
-                src="../assets/img/risotto.jpg"
-                alt="Risotto de setas cremoso servido en plato"
-                width="300"
-                height="300"
-                class="img-fluid img-rounded"
-            >
+                <picture class="detail-featured-picture">
+
+                    <!-- MÓVIL (imagen recortada) -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="../assets/img/risotto-mobile.jpg?as=avif&width=420"
+                        type="image/avif">
+
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="../assets/img/risotto-mobile.jpg?as=webp&width=420"
+                        type="image/webp">
+
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="../assets/img/risotto-mobile.jpg?width=420"
+                        type="image/jpeg">
+
+                    <!-- DESKTOP (imagen completa) -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="../assets/img/risotto.jpg?as=avif&width=800"
+                        type="image/avif">
+
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="../assets/img/risotto.jpg?as=webp&width=800"
+                        type="image/webp">
+
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="../assets/img/risotto.jpg?width=800"
+                        type="image/jpeg">
+
+                    <!-- fallback -->
+                    <img
+                        src="../assets/img/risotto.jpg?width=500"
+                        alt="Risotto de setas cremoso servido en plato"
+                        class="img-fluid img-rounded detail-featured-image">
+                </picture>
 
             <div>
                 <div class="file">Plato destacado</div>
@@ -37,7 +70,7 @@
                 lenta del arroz con caldo y la incorporación progresiva de los ingredientes.
                 </p>
             </div>
-            </div>
+        </div>
 
             <h2>Datos de la receta</h2>
 
@@ -97,29 +130,56 @@
             <div class="detail-extra-images__grid">
 
                 <figure>
-                <img
-                    src="../assets/img/risotto-ingredientes.jpg"
-                    alt="Ingredientes para preparar risotto de setas"
-                    class="img-fluid"
-                >
+                <picture>
+                    <source
+                    srcset="../assets/img/risotto-ingredientes.jpg?as=avif&width=600"
+                    type="image/avif">
+                    <source
+                    srcset="../assets/img/risotto-ingredientes.jpg?as=webp&width=600"
+                    type="image/webp">
+                    <img
+                    src="../assets/img/risotto-ingredientes.jpg?width=600"
+                    alt="Ingredientes frescos para preparar risotto de setas"
+                    width="300"
+                    height="220"
+                    class="img-fluid">
+                </picture>
                 <figcaption>Ingredientes principales</figcaption>
                 </figure>
 
                 <figure>
-                <img
-                    src="../assets/img/risotto-coccion.jpg"
-                    alt="Proceso de cocción del risotto"
-                    class="img-fluid"
-                >
+                    <picture>
+                        <source
+                        srcset="../assets/img/risotto-coccion.jpg?as=avif&width=600"
+                        type="image/avif">
+                        <source
+                        srcset="../assets/img/risotto-coccion.jpg?as=webp&width=600"
+                        type="image/webp">
+                        <img
+                        src="../assets/img/risotto-coccion.jpg?width=600"
+                        alt="Proceso de cocción del risotto removiendo el arroz"
+                        width="300"
+                        height="220"
+                        class="img-fluid">
+                    </picture>
                 <figcaption>Cocción del arroz</figcaption>
                 </figure>
 
                 <figure>
-                <img
-                    src="../assets/img/risotto.jpg"
-                    alt="Risotto terminado servido en plato"
-                    class="img-fluid"
-                >
+                      <picture>
+                        <source
+                        srcset="../assets/img/risotto.jpg?as=avif&width=600"
+                        type="image/avif">
+                        <source
+                        srcset="../assets/img/risotto.jpg?as=webp&width=600"
+                        type="image/webp">
+                        <img
+                        src="../assets/img/risotto.jpg?width=600"
+                        alt="Risotto de setas cremoso servido en plato"
+                        width="300"
+                        height="220"
+                        class="img-fluid">
+                    </picture>
                 <figcaption>Resultado final</figcaption>
                 </figure>
 

@@ -18,26 +18,61 @@
             <div class="file">Ficha</div>
             <h1 class="file"><cite>Paella Valenciana</cite></h1>
 
+            <!-- PEC2: -->
             <div class="intro-file">
-                <img
-                src="../assets/img/paella.jpg"
-                alt="Paella valenciana recién hecha"
-                width="300"
-                height="300"
-                class="img-fluid img-rounded"
-                >
+                <picture class="detail-featured-picture">
+
+                    <!-- MÓVIL (imagen recortada) -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="../assets/img/paella-mobile.jpg?as=avif&width=420"
+                        type="image/avif">
+
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="../assets/img/paella-mobile.jpg?as=webp&width=420"
+                        type="image/webp">
+
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="../assets/img/paella-mobile.jpg?width=420"
+                        type="image/jpeg">
+
+                    <!-- DESKTOP (imagen completa) -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="../assets/img/paella.jpg?as=avif&width=800"
+                        type="image/avif">
+
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="../assets/img/paella.jpg?as=webp&width=800"
+                        type="image/webp">
+
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="../assets/img/paella.jpg?width=800"
+                        type="image/jpeg">
+
+                    <!-- fallback -->
+                    <img
+                        src="../assets/img/paella.jpg?width=500"
+                        alt="Paella valenciana recién hecha"
+                        class="img-fluid img-rounded detail-featured-image">
+                </picture>
 
                 <div>
-                <div class="file">Plato destacado</div>
-                <p>
+                    <div class="file">Plato destacado</div>
+                    <p>
                     La paella valenciana es una de las recetas más representativas de la gastronomía española y,
                     en especial, de la Comunidad Valenciana. Su preparación tradicional combina arroz, pollo,
                     conejo, judía verde, garrofón, tomate, aceite de oliva, agua, azafrán y sal. Más allá de
                     su valor culinario, se trata de un plato profundamente vinculado a la vida familiar, la cocina
                     al aire libre y las celebraciones colectivas.
-                </p>
+                    </p>
                 </div>
             </div>
+            <!-- Fin PEC2 -->
 
             <h2>Datos de la receta</h2>
 
@@ -99,35 +134,56 @@
 
                 <div class="detail-extra-images__grid">
                 <figure>
-                    <img
-                    src="../assets/img/paella-ingredientes.jpg"
-                    alt="Ingredientes frescos para preparar paella valenciana"
-                    width="300"
-                    height="220"
-                    class="img-fluid"
-                    >
+                    <picture>
+                        <source
+                        srcset="../assets/img/paella-ingredientes.jpg?as=avif&width=600"
+                        type="image/avif">
+                        <source
+                        srcset="../assets/img/paella-ingredientes.jpg?as=webp&width=600"
+                        type="image/webp">
+                        <img
+                        src="../assets/img/paella-ingredientes.jpg?width=600"
+                        alt="Ingredientes frescos para preparar paella valenciana"
+                        width="300"
+                        height="220"
+                        class="img-fluid">
+                    </picture>
                     <figcaption>Ingredientes tradicionales</figcaption>
                 </figure>
 
                 <figure>
-                    <img
-                    src="../assets/img/paella-coccion.jpg"
-                    alt="Paella valenciana cocinándose en la paellera"
-                    width="300"
-                    height="220"
-                    class="img-fluid"
-                    >
+                    <picture>
+                        <source
+                        srcset="../assets/img/paella-coccion.jpg?as=avif&width=600"
+                        type="image/avif">
+                        <source
+                        srcset="../assets/img/paella-coccion.jpg?as=webp&width=600"
+                        type="image/webp">
+                        <img
+                        src="../assets/img/paella-coccion.jpg?width=600"
+                        alt="Paella valenciana cocinándose en la paellera"
+                        width="300"
+                        height="220"
+                        class="img-fluid">
+                    </picture>
                     <figcaption>Proceso de cocción</figcaption>
                 </figure>
 
                 <figure>
-                    <img
-                    src="../assets/img/paella.jpg"
-                    alt="Paella valenciana terminada y lista para servir"
-                    width="300"
-                    height="220"
-                    class="img-fluid"
-                    >
+                    <picture>
+                        <source
+                        srcset="../assets/img/paella.jpg?as=avif&width=600"
+                        type="image/avif">
+                        <source
+                        srcset="../assets/img/paella.jpg?as=webp&width=600"
+                        type="image/webp">
+                        <img
+                        src="../assets/img/paella.jpg?width=600"
+                        alt="Paella valenciana terminada y lista para servir"
+                        width="300"
+                        height="220"
+                        class="img-fluid">
+                    </picture>
                     <figcaption>Resultado final</figcaption>
                 </figure>
                 </div>
