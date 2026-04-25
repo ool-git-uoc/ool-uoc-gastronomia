@@ -95,17 +95,17 @@ function initNewsletter() {
     message.textContent = "";
 
     if (!emailValue) {
-      message.textContent = "Introduce tu correo electrónico.";
+      message.textContent = "Error: Introduce tu correo electrónico.";
       return;
     }
 
     if (!isValidEmail) {
-      message.textContent = "El correo no es válido.";
+      message.textContent = "Error: El correo no es válido.";
       return;
     }
 
     if (!checkbox.checked) {
-      message.textContent = "Debes aceptar la política de privacidad.";
+      message.textContent = "Error: Debes aceptar la política de privacidad.";
       return;
     }
 
@@ -161,21 +161,21 @@ function initContactForm() {
     message.classList.remove("error", "success");
 
     if (!asuntoValue) {
-      message.textContent = "El asunto es obligatorio.";
+      message.textContent = "Error: El asunto es obligatorio.";
       message.classList.add("error");
       asunto.focus();
       return;
     }
 
     if (!descripcionValue) {
-      message.textContent = "La descripción es obligatoria.";
+      message.textContent = "Error:La descripción es obligatoria.";
       message.classList.add("error");
       descripcion.focus();
       return;
     }
 
     if (!emailValue || !isValidEmail) {
-      message.textContent = "Introduce un correo válido.";
+      message.textContent = "Error:Introduce un correo válido.";
       message.classList.add("error");
       email.focus();
       return;
@@ -237,70 +237,70 @@ function initInscripcionForm() {
     message.classList.remove("error", "success");
 
     if (!nombre.value.trim()) {
-      message.textContent = "El nombre es obligatorio.";
+      message.textContent = "Error: El nombre es obligatorio.";
       message.classList.add("error");
       nombre.focus();
       return;
     }
 
     if (!apellidos.value.trim()) {
-      message.textContent = "Los apellidos son obligatorios.";
+      message.textContent = "Error:Los apellidos son obligatorios.";
       message.classList.add("error");
       apellidos.focus();
       return;
     }
 
     if (!emailValue || !isValidEmail) {
-      message.textContent = "Introduzca un correo electrónico válido.";
+      message.textContent = "Error: Introduzca un correo electrónico válido.";
       message.classList.add("error");
       email.focus();
       return;
     }
 
     if (!telefono.value.trim()) {
-      message.textContent = "El teléfono de contacto es obligatorio.";
+      message.textContent = "Error:El teléfono de contacto es obligatorio.";
       message.classList.add("error");
       telefono.focus();
       return;
     }
 
     if (!fechaNacimiento.value) {
-      message.textContent = "La fecha de nacimiento es obligatoria.";
+      message.textContent = "Error:La fecha de nacimiento es obligatoria.";
       message.classList.add("error");
       fechaNacimiento.focus();
       return;
     }
 
     if (!nacionalidad.value.trim()) {
-      message.textContent = "La nacionalidad es obligatoria.";
+      message.textContent = "Error:La nacionalidad es obligatoria.";
       message.classList.add("error");
       nacionalidad.focus();
       return;
     }
 
     if (!nivel.value) {
-      message.textContent = "Seleccione su nivel de experiencia.";
+      message.textContent = "Error: Seleccione su nivel de experiencia.";
       message.classList.add("error");
       nivel.focus();
       return;
     }
 
     if (!idioma.value) {
-      message.textContent = "Seleccione un idioma.";
+      message.textContent = "Error:Seleccione un idioma.";
       message.classList.add("error");
       idioma.focus();
       return;
     }
 
     if (!taller.value) {
-      message.textContent = "Seleccione un taller.";
+      message.textContent = "Error:Seleccione un taller.";
       message.classList.add("error");
       taller.focus();
       return;
     }
 
     if (!privacidad.checked) {
-      message.textContent = "Debe aceptar la política de privacidad.";
+      message.textContent = "Error: Debe aceptar la política de privacidad.";
       message.classList.add("error");
       privacidad.focus();
       return;
